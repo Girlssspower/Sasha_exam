@@ -1,0 +1,93 @@
+#back1 {
+    -fx-background-color: "#E1E1E1";
+}
+
+#back2 {
+    -fx-background-color: "#EBEBEB";
+}
+
+#title {
+    -fx-text-fill: "#535353";
+    -fx-font-size: 48;
+    -fx-font-family: "Montserrat";
+}
+
+#menu_button {
+    -fx-background-color: "transparent";
+    -fx-text-fill: "#A0A0A0";
+    -fx-font-size: 18;
+    -fx-font-family: "Montserrat";
+}
+
+#menu_button: hover {
+    -fx-border-width: 1;
+    -fx-border-color: "transparent"  "transparent" "#535353" "transparent" ;
+    -fx-text-fill: "#535353" ;
+}
+
+
+#textfield {
+      -fx-background-color: "transparent";
+      -fx-text-fill: "#535353";
+      -fx-font-size: 18;
+      -fx-font-family: "Montserrat";
+      -fx-border-color: "transparent" "transparent" "#535353" "transparent" ;
+}
+
+.combo-box {
+    -fx-background-color: transparent;
+    -fx-border-color: "transparent" "transparent" "#535353" "transparent" ;
+    -fx-font-family: "Montserrat";
+    -fx-font-size: 18;
+    -fx-text-fill: "#535353";
+}
+
+
+.combo-box .combo-box-popup .list-view, .combo-box .combo-box-popup .list-cell {
+    -fx-background-color:  "transparent";
+    -fx-text-fill: "#535353";
+}
+
+.combo-box .arrow {
+    -fx-background-color: "#535353";
+}
+
+#action {
+    -fx-background-color: "#535353";
+    -fx-text-fill: "#E8E8E8";
+    -fx-font-size: 18;
+    -fx-font-family: "Montserrat";
+}
+
+#cost {
+    -fx-text-fill: "#2d2d2d";
+    -fx-font-size: 18;
+    -fx-font-family: "Montserrat";
+}
+
+#combo-box_otchety {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-font-family: "Montserrat";
+    -fx-font-size: 18;
+    -fx-text-fill: "#A3A3A3";
+}
+
+#combo-box_otchety: hover {
+    -fx-border-width: 1;
+    -fx-border-color: "transparent"  "transparent" "#535353" "transparent" ;
+    -fx-text-fill: "#535353" ;
+}
+
+#combo-box_otchety .list-cell {
+    -fx-text-fill: "#A3A3A3";
+}
+
+#combo-box_otchety .combo-box-popup .list-view, .combo-box .combo-box-popup .list-cell {
+    -fx-background-color:  "transparent";
+    -fx-text-fill: "#A3A3A3";
+}
+
+#combo-box_otchety .arrow {
+    -fx-background-color: "#A3A3A3";
+}

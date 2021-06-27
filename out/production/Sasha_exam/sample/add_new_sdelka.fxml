@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="back1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" stylesheets="@resources/style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.add_new_sdelka">
+    <children>
+        <Label id="title" layoutX="332.0" layoutY="135.0" stylesheets="@resources/style.css" text="Добавить новую сделку" />
+        <TextField id="textfield" fx:id="price" layoutX="475.0" layoutY="405.0" prefHeight="40.0" prefWidth="330.0" promptText="Цена" stylesheets="@resources/style.css" />
+        <TextField id="textfield" fx:id="kolvo" layoutX="475.0" layoutY="465.0" prefHeight="40.0" prefWidth="330.0" promptText="Количество" stylesheets="@resources/style.css" />
+        <Button id="action" fx:id="add_button" layoutX="556.0" layoutY="604.0" mnemonicParsing="false" onAction="#add" prefHeight="50.0" prefWidth="171.0" stylesheets="@resources/style.css" text="Добавить" />
+        <AnchorPane id="back2" prefHeight="100.0" prefWidth="1280.0" stylesheets="@resources/style.css">
+            <children>
+                <Button id="menu_button" fx:id="add_visitor_button" alignment="CENTER_RIGHT" contentDisplay="BOTTOM" layoutX="47.0" layoutY="50.0" mnemonicParsing="false" onAction="#go_add_pos" prefHeight="39.0" prefWidth="234.0" stylesheets="@resources/style.css" text="Добавить посетителя" textFill="#722a2a">
+                    <font>
+                        <Font name="Montserrat Regular" size="24.0" />
+                    </font>
+                </Button>
+                <Button id="menu_button" fx:id="add_sotrud_button" alignment="CENTER_RIGHT" contentDisplay="BOTTOM" layoutX="297.0" layoutY="50.0" mnemonicParsing="false" onAction="#go_add_sotrud" prefHeight="39.0" prefWidth="234.0" stylesheets="@resources/style.css" text="Добавить сотрудника" textFill="#722a2a">
+                    <font>
+                        <Font name="Montserrat Regular" size="24.0" />
+                    </font>
+                </Button>
+                <Button id="menu_button" fx:id="add_inventar_button" alignment="CENTER_RIGHT" contentDisplay="BOTTOM" layoutX="544.0" layoutY="50.0" mnemonicParsing="false" onAction="#go_add_invent" prefHeight="39.0" prefWidth="234.0" stylesheets="@resources/style.css" text="Добавить инвентарь" textFill="#722a2a">
+                    <font>
+                        <Font name="Montserrat Regular" size="24.0" />
+                    </font>
+                </Button>
+                <Button id="menu_button" fx:id="add_sdelka_button" alignment="CENTER_RIGHT" contentDisplay="BOTTOM" layoutX="797.0" layoutY="50.0" mnemonicParsing="false" onAction="#go_add_sdelka" prefHeight="39.0" prefWidth="190.0" stylesheets="@resources/style.css" text="Добавить сделку" textFill="#722a2a">
+                    <font>
+                        <Font name="Montserrat Regular" size="24.0" />
+                    </font>
+                </Button>
+                <ComboBox id="combo-box_otchety" fx:id="create_otchet_button" layoutX="1027.0" layoutY="49.0" prefHeight="41.0" prefWidth="199.0" promptText="Создать отчёт">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                </ComboBox>
+            </children>
+        </AnchorPane>
+      <ComboBox fx:id="name_inventar" layoutX="475.0" layoutY="345.0" prefHeight="41.0" prefWidth="330.0" promptText="Название инвентаря" stylesheets="@resources/style.css" />
+      <ComboBox fx:id="fio_sotrud" layoutX="476.0" layoutY="285.0" prefHeight="41.0" prefWidth="330.0" promptText="ФИО сотрудника" stylesheets="@resources/style.css" />
+      <ComboBox fx:id="fio_visitor" layoutX="476.0" layoutY="225.0" prefHeight="41.0" prefWidth="330.0" promptText="ФИО посетителя" stylesheets="@resources/style.css" />
+      <Label id="cost" fx:id="itog_cost" layoutX="699.0" layoutY="534.0" prefHeight="29.0" prefWidth="123.0" text="Label" />
+      <Label id="cost" layoutX="478.0" layoutY="534.0" prefHeight="29.0" prefWidth="207.0" text="Итоговая стоимость:" />
+    </children>
+</AnchorPane>
